@@ -2,11 +2,18 @@ from setuptools import setup, find_packages
 
 setup(
     name='kfinance_assistant',
-    version='1.0',
-    packages=find_packages(),
+    version='1.0.0',
     description='Система для управления финансами и анализа расходов.',
+    long_description=open('README.md', encoding='utf-8').read(),
+    long_description_content_type='text/markdown',
     author='Kuerton',
     author_email='contact@maliont.games',
     url='https://github.com/artemkuerton/kfinance_assistant',
-    install_requires=[],
+    packages=find_packages(),
+    classifiers=[
+        'Programming Language :: Python :: 3',
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: OS Independent',
+    ],
+    python_requires='>=3.6',
 )

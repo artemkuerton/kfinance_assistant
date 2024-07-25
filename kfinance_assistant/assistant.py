@@ -3,8 +3,8 @@ import json
 class KFinanceAssistant:
     def __init__(self):
         """Инициализация финансового помощника."""
-        self.transactions = []  # Список для хранения операций
-        self.budget = 0  # Бюджет пользователя
+        self.transactions = []
+        self.budget = 0 
 
     def add_transaction(self, amount, category):
         """Добавить операцию с указанной суммой и категорией."""
@@ -34,7 +34,6 @@ class KFinanceAssistant:
             print(f"{category}: {amount}")
         print("===============================")
 
-        # Рекомендации по экономии
         if total_expenses > self.budget:
             print("Вы превысили бюджет! Рассмотрите возможность сокращения расходов.")
         else:

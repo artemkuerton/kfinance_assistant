@@ -1,0 +1,4 @@
+dist/
+build/
+.idea/
+kfinance_assistant.egg-info/
